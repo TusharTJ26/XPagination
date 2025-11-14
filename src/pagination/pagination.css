@@ -1,0 +1,22 @@
+.pagination-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.pagination-container button {
+  background-color: rgba(67, 150, 123, 1);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.pagination-container span {
+  background-color: rgba(67, 150, 123, 1);
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+}

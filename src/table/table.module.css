@@ -1,0 +1,21 @@
+.table {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: solid 5px rgba(67, 150, 123, 1);
+}
+.table thead {
+  background-color: rgba(67, 150, 123, 1);
+  color: white;
+}
+.table th {
+  /* padding: 1rem 0; */
+  border-bottom: 1px solid grey;
+  line-height: 50px;
+}
+.table td {
+  /* padding: 1rem 0; */
+  line-height: 50px;
+  border-bottom: 1px solid grey;
+}
