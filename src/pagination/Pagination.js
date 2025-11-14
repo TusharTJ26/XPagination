@@ -14,8 +14,18 @@ export default function Pagination({
         Previous
       </button>
       <span>{currentPage}</span>
-      <button
+      {/* <button
         onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+        disabled={currentPage === totalPages}
+      >
+        Next
+      </button> */}
+      <button
+        onClick={() => {
+          setTimeout(() => {
+            setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+          }, 0);
+        }}
         disabled={currentPage === totalPages}
       >
         Next
