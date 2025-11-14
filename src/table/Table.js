@@ -10,6 +10,7 @@ export default function Table({ data }) {
   const [indexOfFirstItem, setIndexOfFirstItem] = useState(0);
 
   useEffect(() => {
+    if (data.length === 0) return;
     const indexOfLastItem = currentPage * itemsPerPage;
     // setIndexOfLastItem(indexOfLastItem);
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
