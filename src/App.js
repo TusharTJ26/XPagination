@@ -12,7 +12,7 @@ function App() {
         let data = await response.json();
         setData(data);
       } catch (e) {
-        console.error("An error occured", e);
+        console.error("failed to fetch data", e);
       }
     };
     fetchData();
