@@ -21,11 +21,7 @@ export default function Pagination({
         Next
       </button> */}
       <button
-        onClick={() => {
-          setTimeout(() => {
-            setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-          }, 0);
-        }}
+        onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
         disabled={currentPage === totalPages}
       >
         Next
