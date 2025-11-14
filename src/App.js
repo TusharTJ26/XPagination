@@ -25,7 +25,7 @@ function App() {
         if (!res.ok) throw new Error("Fetch failed");
         return res.json();
       })
-      .then((data) => setUsers(data))
+      .then((data) => setData(data))
       .catch(() => {
         alert("Failed to fetch data"); // EXACT TEXT REQUIRED
       });
